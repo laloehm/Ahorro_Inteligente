@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.logo,
+.logo_dos {
+    width: 100px;
+}
+
+.navbar-brand {
+    width: 100px;
+}
+
+.navbar .info a {
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.nav-link {
+    color: #B7CB60;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.navbar .icon {
+    width: 35px;
+    height: 15px;
+    cursor: pointer;
+    position: relative;
+    margin-left: auto;
+    right: 0;
+    z-index: 1030;
+}
+
+.navbar .icon span {
+    width: 35px;
+    height: 4px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.navbar .icon span:nth-child(2) {
+    bottom: 0;
+}
+
+.navbar .icon span.span-active:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.navbar .icon span.span-active:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+.navbar .links {
+    display: none;
+}
+
+.menu-active {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    background: rgba(0, 0, 0, .5);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    height: 100vh;
+}
+
+.button,
+.btn-calcular,
+.btn-enviar {
+    color: #fff;
+    /* background: rgba(255, 255, 255, .5); */
+    background: #B3A3CA;
+    padding: 25px;
+    width: 250px;
+    border-radius: 40px;
+    text-align: center;
+}
+
+#menuDos {
+    background: #635196;
+    height: 170px;
+}
+
+.home {
+    height: 100vh;
+    background-image: url(../images/Bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.home h1 {
+    font-size: 4.5rem;
+}
+
+.home h2 {
+    font-size: 3rem;
+}
+
+.sueños h2 {
+    color: #635196;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3.4rem;
+}
+
+.sueños .text {
+    background: rgba(255, 255, 255, .7);
+    position: absolute;
+    top: 10px;
+    width: 80%;
+    left: 10%;
+    padding: 15px;
+}
+
+.sueños .text p {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #635196;
+    font-size: 1.7rem;
+}
+
+.conservador h2,
+.moderado h2 {
+    font-size: 2rem;
+}
+
+.conservador {
+    background: #B7CB60;
+}
+
+.conservador h3,
+.conservador h2 {
+    color: #635196;
+    position: relative;
+    font-weight: bold;
+}
+
+.conservador h3::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background: #635196;
+    right: -50px;
+    top: 49%;
+    position: absolute;
+}
+
+.conservador ul,
+.moderado ul {
+    color: #fff;
+}
+
+.moderado {
+    background: #BF4461;
+}
+
+.moderado h3 {
+    position: relative;
+}
+
+.moderado ul,
+.conservador ul li {
+    list-style: none;
+}
+
+.moderado ul li {
+    position: relative;
+}
+
+.moderado h3::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 4px;
+    background: #fff;
+    left: -50px;
+    top: 49%;
+    position: absolute;
+}
+
+.pasos h2 {
+    color: #635196;
+    font-weight: bold;
+    font-size: 2.7rem;
+}
+
+.pasos h3 {
+    font-size: 2.5rem;
+}
+
+.pasos p {
+    font-size: 1.3rem;
+}
+
+.pasos .icon {
+    width: 110px;
+    height: 110px;
+}
+
+.pasos .paso {
+    position: absolute;
+    width: 110%;
+    z-index: 2;
+    height: 200px;
+    color: #635196;
+    font-weight: bold;
+}
+
+.pasos .paso .text {
+    width: calc(100% - 110px);
+}
+
+.pasos .col-md-4:nth-child(1) .paso:nth-child(1) {
+    top: 80px;
+    right: -70px;
+    ;
+}
+
+.pasos .col-md-4:nth-child(1) .paso:nth-child(2) {
+    bottom: 80px;
+    right: -70px;
+    ;
+}
+
+.pasos .col-md-4:nth-child(3) .paso:nth-child(1) {
+    top: 80px;
+    left: -80px;
+}
+
+.pasos .col-md-4:nth-child(3) .paso:nth-child(2) {
+    bottom: 80px;
+    left: -80px;
+}
+
+.steeps {
+    margin-top: 170px;
+}
+
+/* .moderado ul li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    top: 8px;
+    left: -15px;
+} */
+
+.calculator h2,
+.calculator h3,
+.contact h3 {
+    font-size: 2.7rem;
+    color: #635196;
+}
+
+.calculator h3 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.hacemos {
+    background-image: url(../images/Bg_Hacemos.png);
+    background-position: center;
+}
+
+.hacemos h2 {
+    font-size: 3rem;
+}
+
+.hacemos p {
+    font-size: 1.5rem;
+}
+
+.hacemos img {
+    width: 300px;
+}
+
+.dinero h2 {
+    font-size: 3rem;
+    color: #635196;
+}
+
+.dinero p {
+    color: #635196;
+    font-weight: bold;
+}
+
+.contact {
+    background: #D4DCE9;
+}
+
+.contact .header {
+    background: #B3A3CA;
+}
+
+.contact .header h2 {
+    font-size: 4rem;
+    position: relative;
+}
+
+.contact .header h2::after,
+.contact .header h2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 15%;
+    height: 4px;
+    background: #635196;
+    top: calc(50% - 2px);
+}
+
+.contact .header h2::before {
+    left: 0;
+}
+
+.contact .header h2::after {
+    right: 0;
+}
+
+.contact .box-form {
+    background: #635196;
+}
+
+.contact .icon {
+    width: 22px;
+}
+
+.input-group-text,
+.form-control {
+    background: #d4cbe2;
+}
+
+.form-control::placeholder {
+    color: #fff;
+    font-style: italic;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer a,
+footer p {
+    color: #635196;
+    font-size: 1.3rem;
+}
+
+footer .icon {
+    width: 40px;
+    display: inline-block;
+}
+
+@media (max-width: 991px) {
+    .pasos .icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .pasos .paso {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .pasos .paso .text {
+        width: calc(100% - 70px);
+        margin-right: auto;
+    }
+
+    .pasos .col-md-4:nth-child(1) .paso:nth-child(1) {
+        top: 0px;
+        right: 0px;
+        ;
+    }
+
+    .pasos .col-md-4:nth-child(1) .paso:nth-child(2) {
+        bottom: 0px;
+        right: 0px;
+        ;
+    }
+
+    .pasos .col-md-4:nth-child(3) .paso:nth-child(1) {
+        top: 0px;
+        left: 0px;
+    }
+
+    .pasos .col-md-4:nth-child(3) .paso:nth-child(2) {
+        bottom: 0px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        width: 120px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #menuDos {
+        height: 140px;
+    }
+
+    .navbar .info {
+        width: 100%;
+    }
+
+    .navbar .info a {
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .navbar .icon {
+        position: absolute;
+        top: 55px;
+        right: 30px;
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .home h2 {
+        font-size: 1.5rem;
+    }
+
+    .sueños h2 {
+        font-size: 1.7rem;
+    }
+
+    .conservador h3::after {
+        display: none;
+    }
+
+    .moderado h3::after {
+        display: none;
+    }
+
+    .hacemos h2 {
+        font-size: 2rem;
+    }
+
+    .dinero h2 {
+        font-size: 2rem;
+    }
+
+    .conservador h3,
+    .moderado h3 {
+        font-size: 1.5rem;
+    }
+
+    .hacemos img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .conservador h2,
+    .moderado h2 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .contact .header h2 {
+        font-size: 2rem;
+    }
+
+    .contact .header h2::after,
+    .contact .header h2::before {
+        display: none;
+    }
+
+    .calculator h2,
+    .calculator h3,
+    .contact h3 {
+        font-size: 1.7rem;
+    }
+
+    .pasos h2 {
+        font-size: 2rem;
+    }
+
+    .pasos p {
+        font-size: 1rem;
+    }
+
+    .pasos h3 {
+        font-size: 1.75rem;
+    }
+
+    .steeps {
+        margin-top: 140px;
+    }
+
+}
